@@ -15,7 +15,7 @@ function esperar(tempo = 2000) {
         setTimeout(function(){
             console.log('Exec Promesa')
             resolve('Vishhh')
-        }, 2000)
+        }, tempo)
     })
 }
 
