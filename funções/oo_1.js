@@ -1,5 +1,7 @@
+// Função Construtora
+
 function Produto(nome, preco, desconto = 0.15){
-    this.nome = nome
+    this.nome = nome            // This acessa os valores interno e os instancia
     this.preco = preco
     this.desconto = desconto
     this.precoFinal = function() {
@@ -7,7 +9,7 @@ function Produto(nome, preco, desconto = 0.15){
     }
 }
 
-const prod_1 = new Produto('Caneta', 4.50)
+const prod_1 = new Produto('Caneta', 4.50)      // Quando usamos a palavra NEW criamos uma no instancia
 const prod_2 = new Produto('Caderno', 17.90)
 
 console.log(prod_1.nome)
