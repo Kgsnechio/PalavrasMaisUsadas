@@ -22,7 +22,10 @@ fn.lerDiretorio(caminho)
     .then(fn.separarTextoPor(' '))
     .then(fn.removerSeVazio)
     .then(fn.removerSeApenasNumero)
+    .then(fn.removerSeIncluir('<'))
+    .then(fn.removerSeIncluir('#'))
     .then(fn.agruparElementos)
+    .then(fn.ordenarPorAtribNumerico('qtde', 'desc'))
     .then(console.log)
 
 
